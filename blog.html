@@ -1,0 +1,320 @@
+<!-- blog.html -->
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      .blog-card {
+        margin-bottom: 30px;
+        transition: transform 0.3s ease;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .blog-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .blog-image {
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .blog-meta {
+        font-size: 0.9em;
+        color: #6c757d;
+      }
+
+      .category-badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 5px 15px;
+        border-radius: 20px;
+      }
+    </style>
+    <title>Blog - Salva Nazelsha</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="blog.html">Salva Nazelsha</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Tentang Saya</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <header class="bg-light py-5 mt-5">
+      <div class="container">
+        <h1 class="text-center">Blog</h1>
+        <p class="lead text-center">
+          Berbagi pengalaman dan pengetahuan seputar web development dan desain
+        </p>
+      </div>
+    </header>
+
+    <!-- Blog Posts -->
+    <section class="container my-5">
+      <div class="row">
+        <!-- Post 1 -->
+        <div class="col-lg-4 col-md-6">
+          <article class="blog-card">
+            <img
+              src="image/blog-1.jpg"
+              class="blog-image w-100"
+              alt="Blog Post 1"
+            />
+            <span class="badge bg-primary category-badge">Web Development</span>
+            <div class="card-body">
+              <div class="blog-meta mb-2">
+                <i class="far fa-calendar-alt"></i> 5 Januari 2024
+                <i class="far fa-comment ms-3"></i> 3 Komentar
+              </div>
+              <h5 class="card-title">
+                Tips Belajar Web Development untuk Pemula
+              </h5>
+              <p class="card-text">
+                Panduan lengkap untuk memulai perjalanan Anda dalam dunia
+                pengembangan web...
+              </p>
+              <a href="#" class="btn btn-outline-primary">Baca Selengkapnya</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="col-lg-4 col-md-6">
+          <article class="blog-card">
+            <img
+              src="image/blog-2.jpg"
+              class="blog-image w-100"
+              alt="Blog Post 2"
+            />
+            <span class="badge bg-success category-badge">UI/UX Design</span>
+            <div class="card-body">
+              <div class="blog-meta mb-2">
+                <i class="far fa-calendar-alt"></i> 3 Januari 2024
+                <i class="far fa-comment ms-3"></i> 5 Komentar
+              </div>
+              <h5 class="card-title">
+                Tren Design UI/UX yang Harus Diketahui di 2024
+              </h5>
+              <p class="card-text">
+                Eksplorasi tren terbaru dalam dunia desain UI/UX yang sedang
+                populer...
+              </p>
+              <a href="#" class="btn btn-outline-primary">Baca Selengkapnya</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="col-lg-4 col-md-6">
+          <article class="blog-card">
+            <img
+              src="image/blog-3.jpg"
+              class="blog-image w-100"
+              alt="Blog Post 3"
+            />
+            <span class="badge bg-warning category-badge">JavaScript</span>
+            <div class="card-body">
+              <div class="blog-meta mb-2">
+                <i class="far fa-calendar-alt"></i> 1 Januari 2024
+                <i class="far fa-comment ms-3"></i> 4 Komentar
+              </div>
+              <h5 class="card-title">Menguasai JavaScript Modern</h5>
+              <p class="card-text">
+                Tutorial lengkap tentang fitur-fitur modern JavaScript yang
+                wajib dikuasai...
+              </p>
+              <a href="#" class="btn btn-outline-primary">Baca Selengkapnya</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Post 4 -->
+        <div class="col-lg-4 col-md-6">
+          <article class="blog-card">
+            <img
+              src="image/blog-4.jpg"
+              class="blog-image w-100"
+              alt="Blog Post 4"
+            />
+            <span class="badge bg-info category-badge">Tips & Tricks</span>
+            <div class="card-body">
+              <div class="blog-meta mb-2">
+                <i class="far fa-calendar-alt"></i> 28 Desember 2023
+                <i class="far fa-comment ms-3"></i> 2 Komentar
+              </div>
+              <h5 class="card-title">Optimasi Performa Website</h5>
+              <p class="card-text">
+                Cara-cara efektif untuk meningkatkan kecepatan loading website
+                Anda...
+              </p>
+              <a href="#" class="btn btn-outline-primary">Baca Selengkapnya</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Post 5 -->
+        <div class="col-lg-4 col-md-6">
+          <article class="blog-card">
+            <img
+              src="image/blog-5.png"
+              class="blog-image w-100"
+              alt="Blog Post 5"
+            />
+            <span class="badge bg-danger category-badge">Tools</span>
+            <div class="card-body">
+              <div class="blog-meta mb-2">
+                <i class="far fa-calendar-alt"></i> 25 Desember 2023
+                <i class="far fa-comment ms-3"></i> 6 Komentar
+              </div>
+              <h5 class="card-title">Tools Terbaik untuk Web Developer</h5>
+              <p class="card-text">
+                Daftar lengkap tools yang dapat membantu meningkatkan
+                produktivitas Anda...
+              </p>
+              <a href="#" class="btn btn-outline-primary">Baca Selengkapnya</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Post 6 -->
+        <div class="col-lg-4 col-md-6">
+          <article class="blog-card">
+            <img
+              src="image/blog-6.png"
+              class="blog-image w-100"
+              alt="Blog Post 6"
+            />
+            <span class="badge bg-secondary category-badge">Tutorial</span>
+            <div class="card-body">
+              <div class="blog-meta mb-2">
+                <i class="far fa-calendar-alt"></i> 20 Desember 2023
+                <i class="far fa-comment ms-3"></i> 8 Komentar
+              </div>
+              <h5 class="card-title">
+                Membuat Portfolio Website dengan Bootstrap 5
+              </h5>
+              <p class="card-text">
+                Tutorial step by step membuat website portfolio profesional...
+              </p>
+              <a href="#" class="btn btn-outline-primary">Baca Selengkapnya</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <nav class="my-5">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Blog Sidebar -->
+    <aside class="container mb-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <!-- Search Bar -->
+          <div class="mb-4">
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Cari artikel..."
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-primary" type="submit">
+                Cari
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <!-- Categories -->
+          <div class="card mb-4">
+            <div class="card-header">
+              <h5 class="mb-0">Kategori</h5>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#" class="text-decoration-none"
+                    >Web Development (5)</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none">UI/UX Design (3)</a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none">JavaScript (4)</a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none">Tips & Tricks (6)</a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none">Tutorial (8)</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Footer same as index.html -->
+    <footer class="bg-dark text-white py-4">
+      <!-- ... (sama seperti di index.html) ... -->
+    </footer>
+  </body>
+</html>
+
+<!-- Saya akan melanjutkan dengan halaman contact.html di pesan berikutnya karena batasan karakter -->
